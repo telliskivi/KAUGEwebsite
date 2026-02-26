@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KAUGE — Festival</title>
+  <meta name="description" content="KAUGE is an immersive festival celebrating music, art, and community." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">KAUGE</a>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#tickets">Tickets</a></li>
+    </ul>
+    <a href="#tickets" class="nav__cta">Get Tickets</a>
+    <button class="nav__burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-menu__link">About</a></li>
+      <li><a href="#program" class="mobile-menu__link">Program</a></li>
+      <li><a href="#artists" class="mobile-menu__link">Artists</a></li>
+      <li><a href="#tickets" class="mobile-menu__link">Tickets</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__noise"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">29–31 August 2025</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line reveal reveal--delay-1">KAU</span>
+        <span class="hero__title-line hero__title-line--outline reveal reveal--delay-2">GE</span>
+      </h1>
+      <p class="hero__subtitle reveal reveal--delay-3">Music · Art · Community</p>
+      <div class="hero__location reveal reveal--delay-4">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M7 0C4.794 0 3 1.794 3 4c0 3 4 10 4 10s4-7 4-10c0-2.206-1.794-4-4-4zm0 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"/>
+        </svg>
+        Tallinn, Estonia
+      </div>
+      <div class="hero__actions reveal reveal--delay-5">
+        <a href="#tickets" class="btn btn--primary">Buy Tickets</a>
+        <a href="#program" class="btn btn--ghost">View Program</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>KAUGE 2025</span>
+      <span>·</span>
+      <span>29–31 August</span>
+      <span>·</span>
+      <span>Tallinn</span>
+      <span>·</span>
+      <span>Music</span>
+      <span>·</span>
+      <span>Art</span>
+      <span>·</span>
+      <span>Community</span>
+      <span>·</span>
+      <span>KAUGE 2025</span>
+      <span>·</span>
+      <span>29–31 August</span>
+      <span>·</span>
+      <span>Tallinn</span>
+      <span>·</span>
+      <span>Music</span>
+      <span>·</span>
+      <span>Art</span>
+      <span>·</span>
+      <span>Community</span>
+      <span>·</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="label reveal">About the festival</p>
+          <h2 class="about__heading reveal reveal--delay-1">Where sound<br/>meets space.</h2>
+          <p class="about__body reveal reveal--delay-2">
+            KAUGE (Estonian for <em>"distant"</em>) is a three-day festival at the intersection of
+            experimental music, visual art, and collective experience. Each edition gathers
+            artists from across the globe to a single place in Tallinn — to perform, exhibit,
+            and converse.
+          </p>
+          <p class="about__body reveal reveal--delay-3">
+            The festival takes place across multiple venues in Tallinn's Telliskivi Creative City,
+            blending indoor stages with open-air installations and guided listening sessions.
+          </p>
+        </div>
+        <div class="about__stats reveal reveal--delay-2">
+          <div class="stat">
+            <span class="stat__number">60+</span>
+            <span class="stat__label">Artists</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">3</span>
+            <span class="stat__label">Days</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">6</span>
+            <span class="stat__label">Stages</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">5K</span>
+            <span class="stat__label">Attendees</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program -->
+  <section class="program section" id="program">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label">Program</p>
+        <h2 class="section-title">Three days,<br/>six stages.</h2>
+      </div>
+
+      <div class="tabs reveal reveal--delay-1">
+        <button class="tab tab--active" data-tab="day1">Day 1 — Fri</button>
+        <button class="tab" data-tab="day2">Day 2 — Sat</button>
+        <button class="tab" data-tab="day3">Day 3 — Sun</button>
+      </div>
+
+      <div class="schedule" id="day1">
+        <div class="schedule__item reveal">
+          <div class="schedule__time">18:00</div>
+          <div class="schedule__info">
+            <h3>Opening Ceremony</h3>
+            <p>Main Stage · All artists welcome</p>
+          </div>
+          <div class="schedule__stage">Main Stage</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">19:30</div>
+          <div class="schedule__info">
+            <h3>Eesti Filharmoonia Kammerkoor</h3>
+            <p>New choral compositions</p>
+          </div>
+          <div class="schedule__stage">Hall A</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">21:00</div>
+          <div class="schedule__info">
+            <h3>Objekt</h3>
+            <p>Techno / DJ Set</p>
+          </div>
+          <div class="schedule__stage">Club Stage</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">22:30</div>
+          <div class="schedule__info">
+            <h3>Actress</h3>
+            <p>Electronic / Live</p>
+          </div>
+          <div class="schedule__stage">Club Stage</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">00:00</div>
+          <div class="schedule__info">
+            <h3>Arca</h3>
+            <p>Experimental / Live A/V</p>
+          </div>
+          <div class="schedule__stage">Main Stage</div>
+        </div>
+      </div>
+
+      <div class="schedule hidden" id="day2">
+        <div class="schedule__item reveal">
+          <div class="schedule__time">14:00</div>
+          <div class="schedule__info">
+            <h3>Listening Sessions</h3>
+            <p>Curated ambient listening experience</p>
+          </div>
+          <div class="schedule__stage">Garden</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">16:00</div>
+          <div class="schedule__info">
+            <h3>Panel: Sound & Space</h3>
+            <p>Discussion with artists and architects</p>
+          </div>
+          <div class="schedule__stage">Studio</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">19:00</div>
+          <div class="schedule__info">
+            <h3>Midori Takada</h3>
+            <p>Percussion / Live</p>
+          </div>
+          <div class="schedule__stage">Hall A</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">21:00</div>
+          <div class="schedule__info">
+            <h3>Ben UFO</h3>
+            <p>Techno / DJ Set</p>
+          </div>
+          <div class="schedule__stage">Club Stage</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">23:30</div>
+          <div class="schedule__info">
+            <h3>Shackleton</h3>
+            <p>Dub Techno / Live</p>
+          </div>
+          <div class="schedule__stage">Club Stage</div>
+        </div>
+      </div>
+
+      <div class="schedule hidden" id="day3">
+        <div class="schedule__item reveal">
+          <div class="schedule__time">13:00</div>
+          <div class="schedule__info">
+            <h3>Artist Talks</h3>
+            <p>Open conversations with festival artists</p>
+          </div>
+          <div class="schedule__stage">Studio</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">16:00</div>
+          <div class="schedule__info">
+            <h3>Murcof</h3>
+            <p>Modern Classical / Live</p>
+          </div>
+          <div class="schedule__stage">Hall A</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">18:30</div>
+          <div class="schedule__info">
+            <h3>Ellen Arkbro</h3>
+            <p>Drone / Organ</p>
+          </div>
+          <div class="schedule__stage">Hall A</div>
+        </div>
+        <div class="schedule__item reveal">
+          <div class="schedule__time">21:00</div>
+          <div class="schedule__info">
+            <h3>Closing Concert</h3>
+            <p>All festival artists — collective finale</p>
+          </div>
+          <div class="schedule__stage">Main Stage</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artists -->
+  <section class="artists section" id="artists">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label">Lineup</p>
+        <h2 class="section-title">The artists.</h2>
+      </div>
+      <div class="artists__grid">
+        <article class="artist-card reveal">
+          <div class="artist-card__image" style="background-color: #1a1a2e;">
+            <div class="artist-card__placeholder">A</div>
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">Arca</h3>
+            <p class="artist-card__genre">Experimental / Electronic</p>
+            <span class="artist-card__origin">Venezuela / UK</span>
+          </div>
+        </article>
+        <article class="artist-card reveal reveal--delay-1">
+          <div class="artist-card__image" style="background-color: #0d1b2a;">
+            <div class="artist-card__placeholder">O</div>
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">Objekt</h3>
+            <p class="artist-card__genre">Techno / DJ</p>
+            <span class="artist-card__origin">UK / Germany</span>
+          </div>
+        </article>
+        <article class="artist-card reveal reveal--delay-2">
+          <div class="artist-card__image" style="background-color: #1b0000;">
+            <div class="artist-card__placeholder">M</div>
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">Midori Takada</h3>
+            <p class="artist-card__genre">Percussion / Minimalism</p>
+            <span class="artist-card__origin">Japan</span>
+          </div>
+        </article>
+        <article class="artist-card reveal reveal--delay-3">
+          <div class="artist-card__image" style="background-color: #0a1a0a;">
+            <div class="artist-card__placeholder">E</div>
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">Ellen Arkbro</h3>
+            <p class="artist-card__genre">Drone / Contemporary</p>
+            <span class="artist-card__origin">Sweden</span>
+          </div>
+        </article>
+        <article class="artist-card reveal">
+          <div class="artist-card__image" style="background-color: #1a1000;">
+            <div class="artist-card__placeholder">S</div>
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">Shackleton</h3>
+            <p class="artist-card__genre">Dub Techno / Electronic</p>
+            <span class="artist-card__origin">UK</span>
+          </div>
+        </article>
+        <article class="artist-card reveal reveal--delay-1">
+          <div class="artist-card__image" style="background-color: #0d0d1a;">
+            <div class="artist-card__placeholder">B</div>
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">Ben UFO</h3>
+            <p class="artist-card__genre">Techno / DJ</p>
+            <span class="artist-card__origin">UK</span>
+          </div>
+        </article>
+        <article class="artist-card reveal reveal--delay-2">
+          <div class="artist-card__image" style="background-color: #1a0a1a;">
+            <div class="artist-card__placeholder">M</div>
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">Murcof</h3>
+            <p class="artist-card__genre">Electronic / Classical</p>
+            <span class="artist-card__origin">Mexico</span>
+          </div>
+        </article>
+        <article class="artist-card reveal reveal--delay-3">
+          <div class="artist-card__image" style="background-color: #0a1a1a;">
+            <div class="artist-card__placeholder">A</div>
+          </div>
+          <div class="artist-card__info">
+            <h3 class="artist-card__name">Actress</h3>
+            <p class="artist-card__genre">Electronic / Experimental</p>
+            <span class="artist-card__origin">UK</span>
+          </div>
+        </article>
+      </div>
+      <div class="artists__more reveal">
+        <p>+ 52 more artists to be announced</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets -->
+  <section class="tickets section" id="tickets">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="label">Tickets</p>
+        <h2 class="section-title">Join us.</h2>
+      </div>
+      <div class="tickets__grid">
+        <div class="ticket-card reveal">
+          <div class="ticket-card__header">
+            <p class="ticket-card__type">Day Pass</p>
+            <p class="ticket-card__price">€35</p>
+          </div>
+          <ul class="ticket-card__perks">
+            <li>Access to all stages for one day</li>
+            <li>Access to exhibitions</li>
+            <li>Access to talks &amp; panels</li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full">Buy Day Pass</a>
+        </div>
+        <div class="ticket-card ticket-card--featured reveal reveal--delay-1">
+          <div class="ticket-card__badge">Best value</div>
+          <div class="ticket-card__header">
+            <p class="ticket-card__type">Festival Pass</p>
+            <p class="ticket-card__price">€85</p>
+          </div>
+          <ul class="ticket-card__perks">
+            <li>Access to all stages — all 3 days</li>
+            <li>Access to all exhibitions</li>
+            <li>Priority entry</li>
+            <li>Exclusive festival programme booklet</li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full">Buy Festival Pass</a>
+        </div>
+        <div class="ticket-card reveal reveal--delay-2">
+          <div class="ticket-card__header">
+            <p class="ticket-card__type">Supporter Pass</p>
+            <p class="ticket-card__price">€150</p>
+          </div>
+          <ul class="ticket-card__perks">
+            <li>Everything in Festival Pass</li>
+            <li>Backstage access</li>
+            <li>Artist dinner invitation</li>
+            <li>Limited edition merchandise</li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full">Buy Supporter Pass</a>
+        </div>
+      </div>
+      <p class="tickets__note reveal reveal--delay-3">
+        Student &amp; concession discounts available. <a href="#">Contact us</a> for group bookings.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner reveal">
+        <h2>29–31 August 2025<br/>Tallinn, Estonia</h2>
+        <a href="#tickets" class="btn btn--primary btn--large">Secure Your Spot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">KAUGE</a>
+          <p class="footer__tagline">Distant sounds, close encounters.</p>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-col">
+            <p class="footer__nav-heading">Festival</p>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#program">Program</a></li>
+              <li><a href="#artists">Artists</a></li>
+              <li><a href="#tickets">Tickets</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <p class="footer__nav-heading">Connect</p>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Spotify</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <p class="footer__nav-heading">Info</p>
+            <ul>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Accreditation</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 KAUGE Festival. All rights reserved.</p>
+        <p>Tallinn, Estonia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
